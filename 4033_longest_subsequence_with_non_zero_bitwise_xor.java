@@ -8,10 +8,10 @@ class Solution {
         return nums.length;
        }
        for(int i :nums){
-        if(i != 0){
-            return nums.length -1 ;
+        if(i !=0){
+            return nums.length-1;
         }
-       }
+       } 
     return 0;    
     }
 }

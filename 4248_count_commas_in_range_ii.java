@@ -1,19 +1,12 @@
 class Solution {
     public long countCommas(long n) {
-        int count =0;
-        long temp = n;
-        while (n > 0) {
-           count++;
-           n /= 10;
+        if(n>=1000){
+            return n-999;
         }
-        if(count<=3){
-            return 0;
-        }
-        else if(count>=4){
-            return temp - 999;
-        }
-
-    return -1;   
-        
+        if(n>=10000)
+        return n-999 +1;
+        if(n>=100000)
+        return n-999 +1;
+        return 0;
     }
 }
